@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed AL-Sorori|مهندس برمجيات|Full-Stack</title>
+    <title>Eng Ahmed AL-Sorori | مهندس برمجيات</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -24,36 +24,61 @@
             border: none;
             transition: transform 0.3s;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border-radius: 15px;
         }
         .skill-card:hover {
             transform: translateY(-10px);
         }
         .tech-icon {
-            font-size: 3rem;
-            color: #007bff;
+            font-size: 3.5rem;
             margin-bottom: 15px;
         }
         .navbar {
             background-color: #1a1a1a !important;
         }
-        .color{
+        .color-header {
             background-color: #1a1a1a;
-            color:white;
-           border-radius: 25px 50px 30px 20px;
+            color: white;
+            border-radius: 25px 50px 30px 20px;
+            padding: 15px 30px;
+            display: inline-block;
+        }
+        .skill-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
         footer {
             background: #1a1a1a;
             color: white;
             padding: 30px 0;
         }
+        a { text-decoration: none; }
+        .btn-contact {
+            background-color: #71b644;
+            color: white;
+            border-radius: 15px;
+            padding: 20px 40px;
+            transition: 0.3s;
+            border: none;
+        }
+        .btn-contact:hover {
+            background-color: #5a9336;
+            color: white;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" dir="ltr">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
-               <span style="color: #71b644;">Eng</span> Ahmed AL-Sorori</a>
+               <span style="color: #71b644;">Eng</span> Ahmed AL-Sorori
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,7 +86,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#ihaveanidea">I Have An Idea</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -70,108 +95,492 @@
 
     <header class="hero-section">
         <div class="container">
-            <h1 class="display-3 fw-bold mt-1"><span style="color: #71b644;">Eng</span> Ahmed AL-Sorori <br>أحمد السروري </h1>
+            <h1 class="display-3 fw-bold mt-1"><span style="color: #71b644;">Eng</span> Ahmed AL-Sorori<br>أحمد السروري</h1>
             <p class="lead mb-4">مهندس برمجيات | Full-Stack Web Developer</p>
             <div class="social-links">
-                <a href="https://github.com/eahmedalsorori" class="text-white me-3"><i class="fab fa-github fa-3x"></i></a>
-                <a href="" class="text-white me-3 "><i class="fab fa fa-linkedin fa-3x"style="color: #3801ff;" ></i></a>
+                <a href="https://github.com/eahmedalsorori" target="_blank" class="text-white me-4"><i class="fab fa-github fa-3x"></i></a>
+                <a href="https://ye.linkedin.com/in/ahmed-al-sorory-299aa1289" target="_blank" class="text-white"><i class="fab fa-linkedin fa-3x" style="color: #0077b5;"></i></a>
             </div>
         </div>
     </header>
 
-    <section id="about" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4 color">نبذة عني <br><span style="color: #71b644;">About </span></h2>
-            <p class="mx-auto" style="max-width: 800px; font-size: 1.2rem;">
-                مطور ويب شغوف ببناء تطبيقات متكاملة، أمتلك خبرة في التعامل مع التقنيات الأمامية (Frontend) والخلفية (Backend). <br> أركز دائماً على كتابة كود نظيف وقابل للتطوير مع بناء قواعد بيانات قوية ومنظمة.
-            <br> حاصل على شهادة البكالوريوس تخصص علوم الحاسوب <br><b>computer science</b> </p>
+    <section id="about" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4 color-header">نبذة عني <br><span style="color: #71b644;">About</span></h2>
+            <p class="mx-auto mt-4" style="max-width: 800px; font-size: 1.2rem; line-height: 1.8;">
+                مطور ويب شغوف ببناء تطبيقات متكاملة، أمتلك خبرة في التعامل مع التقنيات الأمامية (Frontend) والخلفية (Backend).
+                أركز دائماً على كتابة كود نظيف وقابل للتطوير مع بناء قواعد بيانات قوية ومنظمة.
+                <br>
+                <b>حاصل على شهادة البكالوريوس تخصص علوم الحاسوب (Computer Science)</b>
+            </p>
         </div>
     </section>
 
     <section id="skills" class="py-5 bg-white">
-        <div class="container">
-            <h2 class="text-center mb-5 color ">المهارات التقنية <br><span style="color: #71b644;">SKills</span></h2>
-            <div class="row g-4 text-center">
+        <div class="container text-center">
+            <h2 class="mb-5 color-header">المهارات التقنية <br><span style="color: #71b644;">Skills</span></h2>
+            <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100 skill-card p-4">
                         <i class="fab fa-php tech-icon" style="color: #777bb4;"></i>
                         <h3>Backend</h3>
-                        <p>تطوير الأنظمة باستخدام لغة PHP بكفاءة عالية.</p>
+                        <p>تطوير الأنظمة والقواعد البرمجية باستخدام لغة PHP بكفاءة عالية.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 skill-card p-4">
                         <i class="fas fa-database tech-icon" style="color: #4479a1;"></i>
                         <h3>SQL Databases</h3>
-                        <p>تصميم وإدارة قواعد البيانات العلائقية وضمان أداء سريع.</p>
+                        <p>تصميم وإدارة قواعد البيانات العلائقية وضمان الأداء السريع والاستقرار.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 skill-card p-4">
                         <i class="fab fa-html5 tech-icon" style="color: #e34f26;"></i>
                         <h3>Frontend</h3>
-                        <p>بناء واجهات مستخدم متجاوبة باستخدام HTML5, CSS3, JS, و Bootstrap.</p>
+                        <p>بناء واجهات مستخدم متجاوبة وعصرية باستخدام HTML5, CSS3, JS, و Bootstrap.</p>
                     </div>
                 </div>
-
-            </div>   
-         </div>
+            </div>
         </div>
     </section>
-<!--Start to  I Have An Idea -->
-<hr>
-<section id="skills" class="py-5 bg-white">
-        <div class="container">
-            <h2 class="text-center mb-5 color">انا لدي فكرة بالتالي <br><span style="color: #71b644;">I Have An Idea</span></h2>
-            <div class="row g-4 text-center">
-                <div class="col-md-4">
-                    <div class="card h-100 skill-card p-4">
-                        <i  style="color: #e34f26;"> <img src="img/001Desktop.jfif" alt="Desktop-App"></i>
-                        <h3>Desktop App</h3>
-                        <p>لدي فكرة عن  بناء برامج وانظمه  سطح المكتب باللغات  <br>  Java , C# ,C</p>
-                    </div>
 
+    <section id="expertise" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5 color-header">مجالات إضافية <br><span style="color: #71b644;">Areas of Expertise</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <img src="img/001Desktop.jfif" alt="Desktop App" onerror="this.src='https://via.placeholder.com/300x180?text=Desktop+Apps'">
+                        <h3>Desktop App</h3>
+                        <p>بناء برامج وأنظمة سطح المكتب بلغات:<br><b>Java, C#, C</b></p>
+                    </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 skill-card p-4">
-                        <i  style="color: #e34f26;"> <img src="img/App.jfif" alt="Moblie-App"></i>
-                        <h3>Moblie App</h3>
-                        <p>لدي فكرة عن بناء تطبيقات  جوال باستخدام <br>    Fultter & Dark</p>
+                        <img src="img/App.jfif" alt="Mobile App" onerror="this.src='https://via.placeholder.com/300x180?text=Mobile+Apps'">
+                        <h3>Mobile App</h3>
+                        <p>بناء تطبيقات جوال متكاملة باستخدام:<br><b>Flutter & Dart</b></p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 skill-card p-4">
-                        <i  style="color: #e34f26;"><img src="img/all4.jfif" alt="Network_security" srcset=""></i>
-                        <h3>Network and Security and Data Mining and Data Analysis</h3>
-                        <p>لدي فكرة عن الشبكات و الامن السبراني وتنقيب البيانات و التحليل البيانات</p>
+                        <img src="img/all4.jfif" alt="Security" onerror="this.src='https://via.placeholder.com/300x180?text=Analysis'">
+                        <h3>Security & Analysis</h3>
+                        <p>فكرة واسعة في الشبكات، الأمن السيبراني، تنقيب وتحليل البيانات.</p>
                     </div>
-        
                 </div>
-           <section >
-                    <div class="card h-100 skill-card p-4">
-                        <i  style="color: #e34f26;"> <img src="img/office.jfif" alt="Moblie-App"></i>
-                        <h3>Microsoft office & Oprting System</h3>
-                        <p>Word,Excel,PowerPoint العمل على مجموعه الميكروسوفت أوفيس  <br>Windows and linux  القدرة على العمل بانظمة تشغيل </p>
-                    </div>
-                    </section>
-              
             </div>
-              
         </div>
-        
     </section>
 
     <section id="contact" class="py-5">
-        <div class="container text-center ">
-            <h2 class="mb-4 color" >دعنا نعمل معاً <br><span style="color: #71b644;">Let's Word Together</span></h2>
-            <p></b>هل لديك مشروع طموح؟ <b>أنا جاهز للمساعدة.</p>
-            <a href="mailto: e.ahmedal.sorori@gmail.com" class="btn color btn-lg mt-3" style="background-color: #71b644;"><h3>تواصل معي عبر البريد</h3></a>
+        <div class="container text-center">
+            <h2 class="mb-4 color-header">دعنا نعمل معاً <br><span style="color: #71b644;">Let's Work Together</span></h2>
+            <p class="fs-5 mb-4">هل لديك مشروع طموح؟ <b>أنا جاهز للمساعدة.</b></p>
+            
+            <a href="mailto:e.ahmedal.sorori@gmail.com?subject=Contact%20from%20Portfolio" class="btn btn-contact shadow-lg">
+                <h3 class="mb-1"><i class="fas fa-envelope me-2"></i>تواصل معي عبر البريد</h3>
+                <span>e.ahmedal.sorori@gmail.com</span>
+            </a>
         </div>
     </section>
 
     <footer class="text-center">
         <div class="container">
-            <p>جميع الحقوق محفوظة © <span style="color: #71b644;">Eng</span> Ahmed AL-Sorori 2026</p>
+            <p class="mb-0">جميع الحقوق محفوظة © <span style="color: #71b644;">Eng</span> Ahmed AL-Sorori 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng Ahmed AL-Sorori | مهندس برمجيات</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #d6d7d8;
+            color: #333;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .skill-card {
+            border: none;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border-radius: 15px;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+        .tech-icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+        .navbar {
+            background-color: #1a1a1a !important;
+        }
+        .color-header {
+            background-color: #1a1a1a;
+            color: white;
+            border-radius: 25px 50px 30px 20px;
+            padding: 15px 30px;
+            display: inline-block;
+        }
+        .skill-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 30px 0;
+        }
+        a { text-decoration: none; }
+        .btn-contact {
+            background-color: #71b644;
+            color: white;
+            border-radius: 15px;
+            padding: 20px 40px;
+            transition: 0.3s;
+            border: none;
+        }
+        .btn-contact:hover {
+            background-color: #5a9336;
+            color: white;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" dir="ltr">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+               <span style="color: #71b644;">Eng</span> Ahmed AL-Sorori
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold mt-1"><span style="color: #71b644;">Eng</span> Ahmed AL-Sorori<br>أحمد السروري</h1>
+            <p class="lead mb-4">مهندس برمجيات | Full-Stack Web Developer</p>
+            <div class="social-links">
+                <a href="https://github.com/eahmedalsorori" target="_blank" class="text-white me-4"><i class="fab fa-github fa-3x"></i></a>
+                <a href="https://ye.linkedin.com/in/ahmed-al-sorory-299aa1289" target="_blank" class="text-white"><i class="fab fa-linkedin fa-3x" style="color: #0077b5;"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4 color-header">نبذة عني <br><span style="color: #71b644;">About</span></h2>
+            <p class="mx-auto mt-4" style="max-width: 800px; font-size: 1.2rem; line-height: 1.8;">
+                مطور ويب شغوف ببناء تطبيقات متكاملة، أمتلك خبرة في التعامل مع التقنيات الأمامية (Frontend) والخلفية (Backend).
+                أركز دائماً على كتابة كود نظيف وقابل للتطوير مع بناء قواعد بيانات قوية ومنظمة.
+                <br>
+                <b>حاصل على شهادة البكالوريوس تخصص علوم الحاسوب (Computer Science)</b>
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="mb-5 color-header">المهارات التقنية <br><span style="color: #71b644;">Skills</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <i class="fab fa-php tech-icon" style="color: #777bb4;"></i>
+                        <h3>Backend</h3>
+                        <p>تطوير الأنظمة والقواعد البرمجية باستخدام لغة PHP بكفاءة عالية.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <i class="fas fa-database tech-icon" style="color: #4479a1;"></i>
+                        <h3>SQL Databases</h3>
+                        <p>تصميم وإدارة قواعد البيانات العلائقية وضمان الأداء السريع والاستقرار.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <i class="fab fa-html5 tech-icon" style="color: #e34f26;"></i>
+                        <h3>Frontend</h3>
+                        <p>بناء واجهات مستخدم متجاوبة وعصرية باستخدام HTML5, CSS3, JS, و Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5 color-header">مجالات إضافية <br><span style="color: #71b644;">Areas of Expertise</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <img src="img/001Desktop.jfif" alt="Desktop App" onerror="this.src='https://via.placeholder.com/300x180?text=Desktop+Apps'">
+                        <h3>Desktop App</h3>
+                        <p>بناء برامج وأنظمة سطح المكتب بلغات:<br><b>Java, C#, C</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <img src="img/App.jfif" alt="Mobile App" onerror="this.src='https://via.placeholder.com/300x180?text=Mobile+Apps'">
+                        <h3>Mobile App</h3>
+                        <p>بناء تطبيقات جوال متكاملة باستخدام:<br><b>Flutter & Dart</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <img src="img/all4.jfif" alt="Security" onerror="this.src='https://via.placeholder.com/300x180?text=Analysis'">
+                        <h3>Security & Analysis</h3>
+                        <p>فكرة واسعة في الشبكات، الأمن السيبراني، تنقيب وتحليل البيانات.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 color-header">دعنا نعمل معاً <br><span style="color: #71b644;">Let's Work Together</span></h2>
+            <p class="fs-5 mb-4">هل لديك مشروع طموح؟ <b>أنا جاهز للمساعدة.</b></p>
+            
+            <a href="mailto:e.ahmedal.sorori@gmail.com?subject=Contact%20from%20Portfolio" class="btn btn-contact shadow-lg">
+                <h3 class="mb-1"><i class="fas fa-envelope me-2"></i>تواصل معي عبر البريد</h3>
+                <span>e.ahmedal.sorori@gmail.com</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">جميع الحقوق محفوظة © <span style="color: #71b644;">Eng</span> Ahmed AL-Sorori 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng Ahmed AL-Sorori | مهندس برمجيات</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #d6d7d8;
+            color: #333;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .skill-card {
+            border: none;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border-radius: 15px;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+        .tech-icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+        .navbar {
+            background-color: #1a1a1a !important;
+        }
+        .color-header {
+            background-color: #1a1a1a;
+            color: white;
+            border-radius: 25px 50px 30px 20px;
+            padding: 15px 30px;
+            display: inline-block;
+        }
+        .skill-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 30px 0;
+        }
+        a { text-decoration: none; }
+        .btn-contact {
+            background-color: #71b644;
+            color: white;
+            border-radius: 15px;
+            padding: 20px 40px;
+            transition: 0.3s;
+            border: none;
+        }
+        .btn-contact:hover {
+            background-color: #5a9336;
+            color: white;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" dir="ltr">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+               <span style="color: #71b644;">Eng</span> Ahmed AL-Sorori
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold mt-1"><span style="color: #71b644;">Eng</span> Ahmed AL-Sorori<br>أحمد السروري</h1>
+            <p class="lead mb-4">مهندس برمجيات | Full-Stack Web Developer</p>
+            <div class="social-links">
+                <a href="https://github.com/eahmedalsorori" target="_blank" class="text-white me-4"><i class="fab fa-github fa-3x"></i></a>
+                <a href="https://ye.linkedin.com/in/ahmed-al-sorory-299aa1289" target="_blank" class="text-white"><i class="fab fa-linkedin fa-3x" style="color: #0077b5;"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4 color-header">نبذة عني <br><span style="color: #71b644;">About</span></h2>
+            <p class="mx-auto mt-4" style="max-width: 800px; font-size: 1.2rem; line-height: 1.8;">
+                مطور ويب شغوف ببناء تطبيقات متكاملة، أمتلك خبرة في التعامل مع التقنيات الأمامية (Frontend) والخلفية (Backend).
+                أركز دائماً على كتابة كود نظيف وقابل للتطوير مع بناء قواعد بيانات قوية ومنظمة.
+                <br>
+                <b>حاصل على شهادة البكالوريوس تخصص علوم الحاسوب (Computer Science)</b>
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="mb-5 color-header">المهارات التقنية <br><span style="color: #71b644;">Skills</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <i class="fab fa-php tech-icon" style="color: #777bb4;"></i>
+                        <h3>Backend</h3>
+                        <p>تطوير الأنظمة والقواعد البرمجية باستخدام لغة PHP بكفاءة عالية.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <i class="fas fa-database tech-icon" style="color: #4479a1;"></i>
+                        <h3>SQL Databases</h3>
+                        <p>تصميم وإدارة قواعد البيانات العلائقية وضمان الأداء السريع والاستقرار.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <i class="fab fa-html5 tech-icon" style="color: #e34f26;"></i>
+                        <h3>Frontend</h3>
+                        <p>بناء واجهات مستخدم متجاوبة وعصرية باستخدام HTML5, CSS3, JS, و Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5 color-header">مجالات إضافية <br><span style="color: #71b644;">Areas of Expertise</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <img src="img/001Desktop.jfif" alt="Desktop App" onerror="this.src='https://via.placeholder.com/300x180?text=Desktop+Apps'">
+                        <h3>Desktop App</h3>
+                        <p>بناء برامج وأنظمة سطح المكتب بلغات:<br><b>Java, C#, C</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <img src="img/App.jfif" alt="Mobile App" onerror="this.src='https://via.placeholder.com/300x180?text=Mobile+Apps'">
+                        <h3>Mobile App</h3>
+                        <p>بناء تطبيقات جوال متكاملة باستخدام:<br><b>Flutter & Dart</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 skill-card p-4">
+                        <img src="img/all4.jfif" alt="Security" onerror="this.src='https://via.placeholder.com/300x180?text=Analysis'">
+                        <h3>Security & Analysis</h3>
+                        <p>فكرة واسعة في الشبكات، الأمن السيبراني، تنقيب وتحليل البيانات.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 color-header">دعنا نعمل معاً <br><span style="color: #71b644;">Let's Work Together</span></h2>
+            <p class="fs-5 mb-4">هل لديك مشروع طموح؟ <b>أنا جاهز للمساعدة.</b></p>
+            
+            <a href="mailto:e.ahmedal.sorori@gmail.com?subject=Contact%20from%20Portfolio" class="btn btn-contact shadow-lg">
+                <h3 class="mb-1"><i class="fas fa-envelope me-2"></i>تواصل معي عبر البريد</h3>
+                <span>e.ahmedal.sorori@gmail.com</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">جميع الحقوق محفوظة © <span style="color: #71b644;">Eng</span> Ahmed AL-Sorori 2026</p>
         </div>
     </footer>
 
